@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Events!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+<audio id="themeAudio">
+
+  <source src="assets/sounds/mario2theme.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<audio id="victoryAudio">
+
+  <source src="assets/sounds/FFvictory.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+    
+        <div class="container titleContainer jumbotron">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <div >
+                        <h2><span id="header">8-bit Hangman</span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <p><span id="Word-blank"></span></p>
+            <p>Guesses Left:<span id="guesses-left"></span></p>
+            <p>Wrong Guesses:<span id="wrong-guesses"></span></p>
+            <p>Wins:<span id="win-counter"></span></p>
+            <p>Losses:<span id="loss-counter"></span></p>
+        </div>
+        <!-- We have to put this at the end of our document to ensure the user-text
+         span exists when we try to access it. -->
+        <script src="assets/javascript/game.js">
+        </script>
+    </body>
+
+</html>
